@@ -11,7 +11,9 @@ Decembre 10 2017: The repo is a total mess. It is not quite usefull for anyone a
 
 # Background 
 
-This was a quick and dirty implementation of Harlan et al.'s method that seemed to work on GPR data. Here is the GPR profile I used for tests. 
-<img src="/position_original.tif" width="900px"/>
-![alt text](https://github.com/dabana/gpr_processing/blob/master/position_original.tif)
+This was a quick and dirty implementation of Harlan et al.'s method that seemed to work on GPR data. Here is the GPR profile I used for tests.
+
+<img src="graphique_focalisation.tif" width="900px"/>
+
+![alt text](https://github.com/dabana/gpr_processing/blob/master/graphique_focalisation.tif)
 
