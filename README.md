@@ -11,9 +11,22 @@ Decembre 10 2017: The repo is a total mess. It is not quite usefull for anyone a
 
 # Background 
 
-This was a quick and dirty implementation of Harlan et al.'s method that seemed to work on GPR data. Here is the GPR profile I used for tests.
+This was a quick and dirty implementation of Harlan et al.'s method that seemed to work on GPR data. The method was test on the following preprocessed GPR profile (dewow, filtering and adaptative gain). The black box shows the regions on which the Harlan et al.'s method was applied.
 
-<img src="graphique_focalisation.tif" width="900px"/>
+<img src="position_original.png" width="900px"/>
 
-![alt text](https://github.com/dabana/gpr_processing/blob/master/graphique_focalisation.tif)
+This is a close-up of the region-of-interest before processing, i.e, the original image:
 
+<img src="original.png" width="900px"/>
+
+This is the result of the first step of the processing, mainly extracting linear structures such as sedimentary inclined beds:
+
+<img src="extraction_des_lits_inclinés.png" width="900px"/>
+
+The extracted beds are then substrated from the original. This new filtered image goes to the 2nd processing step which is meant to extract the diffraction partterns from this image. The resulting image is the following:
+
+<img src="extraction_des_diffrations.png" width="900px"/>
+
+Once the diffractions are extracted, a velocity analysis can be performed using a migration focalisation metric. The following graphs shows the focalisation metric value as a function of wave velocity. The higher the metric, the closer the velocity is to the real velocity. In this case we find the best velocity around 0.11 m/ns as expected for dry sands.
+
+<img src="graphique_focalisation.png" width="900px"/>
